@@ -54,6 +54,12 @@ def menu():
             presionar_tecla()
         elif opcion == 6:
             limpiar_pantalla()
+            if archivo_cargado:
+                with open("servicios_ordenados_por_descripcion.json", 'w') as archivo:
+                    json.dump(lista_completa, archivo, indent=4)
+                    print(f"Archivo generado")
+            else:
+                print("Primero debes cargar el archivo con los servicios!")
             presionar_tecla()
         elif opcion == 0:
             limpiar_pantalla()
