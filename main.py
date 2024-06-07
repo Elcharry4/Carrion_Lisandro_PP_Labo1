@@ -10,7 +10,7 @@ def menu():
         print("3- Calcular total del servicio y asignarlo a la lista")
         print("4- filtrar por tipo de servicio")
         print("5- Servicios ordenados por descripcion de forma ascendente")
-        print("")
+        print("6- Guardar la lista ordenada por descripcion en un json")
         print("0-Salir del programa.")
         opcion = int(input("Seleccione una opción: "))
         
